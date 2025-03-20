@@ -42,7 +42,10 @@ class ModItemModelProvider extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
-
+        handheldItem(Registration.VIAL.value());
+        handheldItem(Registration.SHIMMER_VIAL.value());
+        handheldItem(Registration.CRYSTALLINE_SHARD.value());
+        handheldItem(Registration.SHIMMER_INJECTOR.value());
     }
 }
 
@@ -65,6 +68,10 @@ class ModLanguageProvider extends LanguageProvider {
 
     @Override
     protected void addTranslations() {
+        add(Registration.VIAL.value(), "Vial");
+        add(Registration.SHIMMER_VIAL.value(), "Vial of Shimmer");
+        add(Registration.CRYSTALLINE_SHARD.value(), "Crystalline Shard");
+        add(Registration.SHIMMER_INJECTOR.value(), "Shimmer Injector");
     }
 }
 
